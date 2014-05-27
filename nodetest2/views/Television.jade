@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1.
+        Television Item List
+    ul
+        each item, i in Television
+            li Manufacturer: #{item.Manufacturer},   TV Type: #{item.Type},   Screen Size: #{item.Size},    Model No: #{item.ModelNo}
